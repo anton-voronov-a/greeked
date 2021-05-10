@@ -1,0 +1,73 @@
+.yp-homepage-header {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--yp-top-background);
+  color: #f5f9fc;
+}
+
+
+.yp-homepage-title {
+  font-family: "Kavoon";
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0.2em 0;
+}
+
+.yp-homepage-definition {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0px 0 38px;
+  /*light color on dark background*/
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.yp-homepage-section {
+  flex: 1;
+  color: rgba(0, 0, 0, 0.64);
+  justify-content: center;
+  display: flex;
+}
+
+.yp-homepage-section__title {
+  font-size: 36px;
+  font-weight: 300;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.yp-homepage-section__content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7em;
+  max-width: 787px;
+  margin: 50px 0;
+}
+
+.yp-homepage-capabily-title {
+  display: block;
+  margin: 0.7em 0 0 0;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.yp-homepage-capabily-description {
+  font-size: 0.9em;
+}
+
+.yp-homepage-header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width:600px) {
+  .yp-homepage-title {
+    font-size: min(8vw, 94px);
+  }
+}

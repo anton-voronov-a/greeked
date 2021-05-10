@@ -1,0 +1,10 @@
+.yp-spacer {
+  flex: 1 1 auto;
+}
+
+.yp-toolbar {
+  z-index: 2;
+  color: white;
+  background: var(--yp-top-background);
+  position: relative;
+}

@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-underline-position: under;
+}
+
+:root {
+  --yp-content-padding: 0 15px;
+}
+
+
+@media print {
+  mat-toolbar {
+    display: none !important;
+  }
+
+  .yp-homepage-header {
+    min-height: 0;
+  }
+
+  .yp-homepage-definition, .yp-homepage-title {
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}
