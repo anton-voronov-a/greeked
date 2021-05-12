@@ -1,8 +1,8 @@
 {
   "registeredExtensionIds": [ "feekndagfcgfhnhkidenkapmagaifome" ],
-  "minVersion": "1.1.1",
+  "minVersion": "0.0.0",
   "errorMessages": {
-    "minVersion": "You need to update Greeked and blurred extension. You version is {currentVersion}, min version is {minVersion}.",
+    "minVersion": "You need to update Greeked and blurred extension. Your version is '{currentVersion}', min version is '{minVersion}'.",
     "extensionId": "There is a problem with your extension id. You extension id is {currentExtensionId}."
   }
 }
