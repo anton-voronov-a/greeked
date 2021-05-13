@@ -34,7 +34,6 @@ export class ShareComponent {
           description: `${item.description} will be sent to ${item.name}`
         };
       });
-      console.log(this.transformedLinks)
     } else {
       this.transformedLinks = [];
     }
