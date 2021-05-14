@@ -56,7 +56,7 @@ export class ShareComponent {
     {
       url: 'https://www.facebook.com/sharer.php?u=[postUrl]',
       name: 'Facebook',
-      description: 'Only the web address of the Playlists history',
+      description: 'Only the web address of the Greeked and blurred',
       imageUrl: null
     },
     {
