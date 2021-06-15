@@ -11,10 +11,11 @@
 
 .yp-homepage-title {
   font-family: "Kavoon";
-  font-size: 36px;
+  font-size: 32px;
   font-weight: normal;
   line-height: 1em;
   margin: 0.2em 0;
+  text-align: center;
 }
 
 .yp-homepage-definition {
@@ -47,6 +48,7 @@
   line-height: 1.7em;
   max-width: 787px;
   margin: 50px 0;
+  padding-inline-start: 16px;
 }
 
 .yp-homepage-capabily-title {
@@ -66,12 +68,20 @@
   align-items: center;
 }
 
+.yp-homepage-stores {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .yp-homepage-store {
-  margin: 0 16px;
+  margin: 16px;
+  min-width: 150px;
 }
 
 @media screen and (min-width:600px) {
-  .yp-homepage-title {
-    font-size: min(8vw, 94px);
+    .yp-homepage-title {
+      font-size: min(8vw, 94px);
+    }
   }
-}
