@@ -1,5 +1,5 @@
 {
-  "registeredExtensionIds": [ "feekndagfcgfhnhkidenkapmagaifome", "igcgkjagbnfhjokmklbenkkfgmfalino", "jphkmcbolhaofalbmjcbgmgldkgdabhc" ],
+  "registeredExtensionIds": [ "feekndagfcgfhnhkidenkapmagaifome", "igcgkjagbnfhjokmklbenkkfgmfalino", "jphkmcbolhaofalbmjcbgmgldkgdabhc", "{BDCE67D2-3898-455E-BFCE-00AB8FF171DD}" ],
   "minVersion": "0.0.0",
   "errorMessages": {
     "minVersion": "You need to update Greeked and blurred extension. Your version is '{currentVersion}', min version is '{minVersion}'.",
