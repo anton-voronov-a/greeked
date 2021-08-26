@@ -35,3 +35,7 @@ footer {
   flex-wrap: wrap;
   padding-bottom: 30px;
 }
+.yp-footer-multiple {
+  display: flex;
+  flex-wrap: wrap;
+}
