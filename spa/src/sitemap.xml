@@ -10,4 +10,14 @@
     <priority>1</priority>
     <changefreq>always</changefreq>
   </url>
+  <url>
+    <loc>https://anton-voronov-a.github.io/greeked/assets/docs/privacy-policy/</loc>
+    <priority>0.5</priority>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://anton-voronov-a.github.io/greeked/assets/docs/description/index.html</loc>
+    <priority>0.5</priority>
+    <changefreq>always</changefreq>
+  </url>
 </urlset>
