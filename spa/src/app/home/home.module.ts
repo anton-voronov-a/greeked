@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from "../material-module";
 
 import { HomeComponent } from "./home.component";
+import { HelpDialogModule } from "../help-dialog/help-dialog.module";
 
 
 @NgModule({
@@ -12,7 +13,9 @@ import { HomeComponent } from "./home.component";
   imports: [
     CommonModule,
     
-    MaterialModule
+    MaterialModule,
+
+    HelpDialogModule
   ]
 })
 export class HomeModule { }

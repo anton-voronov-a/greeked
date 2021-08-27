@@ -1,0 +1,64 @@
+.cg-help-content {
+  max-width: 600px;
+  border: solid rgb(0 0 0 / 9%);
+  border-width: 1px 0;
+  max-height: min( calc(100vh - 142px), 65vh)
+}
+
+.cg-help-content-inner {
+  padding: 1em 0 4em 0;
+}
+
+.cg-help-browser-radios {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.cg-help-browser-radio {
+  margin: 24px 0 0 0;
+}
+
+.cg-help-browser-radio__text {
+  margin-left: 8px;
+}
+
+.cg-help-browser-hint {
+  margin-left: 36px;
+}
+
+.cg-level-1 {
+  margin-top: 2em;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  counter-increment: level-1;
+  counter-reset: level-2;
+}
+
+.cg-level-2 {
+  counter-increment: level-2;
+  counter-reset: level-3;
+}
+
+.cg-level-3 {
+  counter-increment: level-3;
+  counter-reset: level-4;
+}
+
+/*.cg-level-4 {
+  counter-increment: level-4;
+}*/
+
+
+.cg-level-2:before {
+  content: counter(level-2) ". ";
+}
+
+.cg-level-3:before {
+  content: counter(level-2) "." counter(level-3) ". ";
+}
+
+/*.cg-level-4:before {
+  content: counter(level-2) "." counter(level-3) "." counter(level-4) ". ";
+}*/

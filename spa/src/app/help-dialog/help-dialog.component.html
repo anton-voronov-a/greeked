@@ -1,0 +1,90 @@
+<h1 mat-dialog-title>How to use on Android</h1>
+<div mat-dialog-content class="cg-help-content">
+
+  <div class="cg-help-content-inner">
+    <p class="cg-level-1">Configure the instruction for your preferred browser</p>
+    <p>
+      On mobile devices with Android, you have 2 browsers in which you can install this extension.
+    </p>
+    <mat-radio-group [(ngModel)]="selectedBrowser"
+                     class="cg-help-browser-radios">
+      <ng-container *ngFor="let browser of browsers">
+        <mat-radio-button [value]="browser"
+                          class="cg-help-browser-radio">
+          <span class="cg-help-browser-radio__text">{{browser.name}}</span>
+
+        </mat-radio-button>
+        <span class="mat-hint cg-help-browser-hint">{{browser.hint}}</span>
+      </ng-container>
+    </mat-radio-group>
+
+    <p class="cg-level-1">Browser installation and configuration</p>
+    <p class="cg-level-2" *ngIf="isKiwi">
+      Download from the
+      <a href="https://play.google.com/store/apps/details?id=com.kiwibrowser.browser"
+         target="_blank"
+         rel="noopener nofollow"
+         title="Browser link">link</a>.
+    </p>
+    <p class="cg-level-2" *ngIf="isYandex">
+      Download from the
+      <a href="https://play.google.com/store/apps/details?id=com.yandex.browser"
+         target="_blank"
+         rel="noopener nofollow"
+         title="Browser link">link</a>.
+    </p>
+    <p class="cg-level-2" *ngIf="isYandex|| isKiwi">
+      Install and open.
+    </p>
+    <ng-container *ngIf="isFirefox">
+      <p class="cg-level-2">
+        Download from the
+        <a href="https://play.google.com/store/apps/details?id=org.mozilla.fenix"
+           target="_blank"
+           rel="noopener nofollow"
+           title="Browser link">link</a>
+        , install and open.
+      </p>
+      <p class="cg-level-2">Enable general extension support setting in Nightly.</p>
+      <p class="cg-level-3">Tap on the three dot menu and select Settings.</p>
+      <p class="cg-level-3">Tap on About Firefox Nightly.</p>
+      <p class="cg-level-3">Tap the Firefox Nightly logo five times until the “Debug menu enabled” notification appears.</p>
+      <p class="cg-level-3">
+        Navigate back to Settings. You will now see a new entry for “Custom Add-on collection”. Once a custom add-on collection has been set up, this menu item will always be visible.
+      </p>
+      <p class="cg-level-2">Tap the “Custom Add-on collection” and set the value "16956994" for the User ID and "My" for the collection name.</p>
+      <p class="cg-level-2">Close the menu.</p>
+    </ng-container>
+
+
+    <p class="cg-level-1">Extension installation and start-up</p>
+    <ng-container *ngIf="isYandex || isKiwi">
+      <p class="cg-level-2">
+        Follow the
+        <a href="https://chrome.google.com/webstore/detail/greeked-and-blurred/igcgkjagbnfhjokmklbenkkfgmfalino"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Extension link">link</a>.
+      </p>
+      <p class="cg-level-2">Tap on Add to Chrome.</p>
+    </ng-container>
+    <ng-container *ngIf="isFirefox">
+      <p class="cg-level-2">
+        Tap on the three dot menu.
+      </p>
+      <p class="cg-level-2">Tap on the Add-ons.</p>
+      <p class="cg-level-2"> Add an extension.</p>
+    </ng-container>
+
+  </div>
+</div>
+
+
+
+<div mat-dialog-actions>
+  <button mat-button
+          mat-dialog-close
+          cdkFocusInitial>
+    Close
+  </button>
+</div>
