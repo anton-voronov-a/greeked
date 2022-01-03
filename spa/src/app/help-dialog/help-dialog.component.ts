@@ -13,7 +13,7 @@ export class HelpDialogComponent implements OnInit {
     this.browsers = [
       this.yandex,
       this.kiwi,
-      this.firefox
+      //this.firefox
     ];
   }
   private firefox: BrowserViewModel = new BrowserViewModel('Firefox Nightly browser', 'Stable');
