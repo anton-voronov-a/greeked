@@ -1,0 +1,36 @@
+.cg-review-form {
+  margin: 20px 0;
+}
+
+.cg-review-message {
+  padding: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cg-review-submit {
+  cursor: pointer;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #532ed2;
+  padding: 8px;
+  font-size: 16px;
+  color: rgb(255 255 255 / 78%);
+  text-decoration: none;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: linear-gradient( 90deg,#9a29ce 0%, #571ead 50%, #280490) no-repeat;
+  background-position-x: right;
+  -ms-background-size: 200%;
+  background-size: 200%;
+}
+
+  .cg-review-submit:hover{
+    color: #ffffff;
+    background-position-x: left;
+  }

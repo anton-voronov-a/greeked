@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Review (Greeked and blurred)</title>
+  <meta name="viewport" content="width=320, initial-scale=1, minimum-scale=0.1, maximum-scale=10">
+  <meta name="description" content="Review (Greeked and blurred)">
+  <link rel="icon" type="image/x-icon" href="../../icon-128.png">
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="../docs.css">
+  <link rel="stylesheet" href="./review.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8BKSHJXJE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8YVRNGE6V6');
+  </script>
+</head>
+<body class="yp-docs-body">
+  <main class="yp-main-docs">
+    <article class="yp-content yp-section yp-navigation-content">
+      <h1 class="yp-title">Review (Greeked and blurred)</h1>
+      <form id="form" class="cg-review-form">
+        <label>
+          What would you like to fix?
+          <textarea maxlength="500"
+                    rows="20"
+                    id="message"
+                    class="cg-review-message"></textarea>
+        </label>
+        <button type="submit"
+                class="cg-review-submit"
+                title="Submit your review">
+          Submit your review
+        </button>
+      </form>
+
+
+      <h2>Watch video <a href="https://www.youtube.com/watch?v=0SUhMq47VM4&list=PL7-KDbl5Jt9epJdnWNX11deqtmMiWbVlX" target="_blank">instructions</a>.</h2>
+
+    </article>
+  </main>
+  <footer>
+    <a href="../../../"
+       title="Greeked and blurred"
+       class="yp-footer-link">Greeked and blurred</a>
+    <a href="../terms/"
+       title="Terms of Service"
+       class="yp-footer-link">Terms of Service</a>
+    <a href="../privacy-policy/"
+       title="Privacy policy"
+       class="yp-footer-link">Privacy policy</a>
+  </footer>
+  <script>
+    (() => {
+      const form = document.getElementById('form');
+      form.onsubmit = () => {
+        const message = document.getElementById('message');
+        const eventParams = {
+          event_category: 'Review',
+          event_label: message.value,
+          event_callback: () => {
+            message.value = null;
+          }
+        };
+        gtag('event', 'submit', eventParams);
+        return false;
+      };
+    })();
+  </script>
+</body>
+</html>
