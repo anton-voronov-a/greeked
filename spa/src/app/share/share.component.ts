@@ -54,12 +54,6 @@ export class ShareComponent {
   public transformedLinks: ProviderInfoViewModel[];
   private links: ProviderInfo[] = [
     {
-      url: 'https://twitter.com/share?url=[postUrl]&text=[postTitle]',
-      name: 'Twitter',
-      description: 'The web address and page title',
-      imageUrl: null
-    },//tested
-    {
       url: 'https://pinterest.com/pin/create/bookmarklet/?media=[postImg]&url=[postUrl]&is_video=[isVideo]&description=[postTitle]',
       name: 'Pinterest',
       description: 'The web address, image representation and page title',
